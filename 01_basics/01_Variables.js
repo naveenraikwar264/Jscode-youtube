@@ -4,5 +4,6 @@ let c='mpsedc'
 b='indore'
 
 console.log(a);
+console.table([a,b,c])
 
 
