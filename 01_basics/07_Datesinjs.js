@@ -35,7 +35,7 @@ console.log(mytimestamp)               // current timestamp in milliseconds
 
 let myDatefromtimestamp=new Date(mytimestamp)
 console.log(myDatefromtimestamp.toLocaleString())
-
+ 
 let pastDate=new Date(2020,0,1)
 console.log(pastDate.toLocaleString())
 
@@ -43,4 +43,17 @@ let diff= myDatefromtimestamp - pastDate
 console.log(diff)                      // difference in milliseconds
 
 console.log(Math.floor(diff/(1000*60*60*24))) // difference in days
- 
+let newdate=new Date()
+console.log(newdate.toLocaleString())
+newdate.setDate(newdate.getDate()+5)
+console.log(newdate.toLocaleString())
+console.log(newdate.getTime())
+console.log(newdate.getMonth())
+console.log(newdate.getDay())
+console.log(newdate.getFullYear())
+console.log(newdate.getHours())
+console.log(newdate.getMinutes())
+console.log(newdate.getSeconds())
+console.log(newdate.getMilliseconds())
+console.log(newdate.toLocaleString('default',{weekday:'long',timeZone:'UTC',year:'numeric',
+    month:'long',day:'numeric'}))
